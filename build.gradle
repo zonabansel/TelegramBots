@@ -3,3 +3,5 @@ allprojects {
 			maven { url 'https://jitpack.io' }
 		}
 	}
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
